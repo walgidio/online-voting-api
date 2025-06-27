@@ -38,5 +38,10 @@ public class PollController {
     public void vote(@RequestBody Vote vote){
         pollService.vote(vote.getPollId(), vote.getOptionIndex());
     }
+
+    @DeleteMapping("/delete/{id}")
+    public void deletePollById(@PathVariable Long id){
+        pollService.deletePollById(id);
+    }
 }
 

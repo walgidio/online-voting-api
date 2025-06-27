@@ -41,4 +41,8 @@ public class PollService {
         selectedOption.setVoteCount(selectedOption.getVoteCount() + 1);
         pollRepository.save(poll);
     }
+
+    public void deletePollById(Long id) {
+        pollRepository.deleteById(id);
+    }
 }
