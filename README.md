@@ -69,3 +69,4 @@ Example payload:
     "optionIndex": 0
 }
 ```
+DELETE /api/polls/delete/{id} – delete a poll by ID
